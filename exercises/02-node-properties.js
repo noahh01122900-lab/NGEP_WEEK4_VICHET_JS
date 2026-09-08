@@ -8,24 +8,29 @@ const firstCard = document.querySelector(".card");
 
 // TODO 1: Change the <h1> text using `textContent`.
 // title.textContent = "...";
-
+title.textContent = "Hello Master Javascript";
 
 // TODO 2: Change the intro paragraph's HTML using `innerHTML` — make part of the
 // text bold with an inline <strong> tag, e.g. "This is <strong>bold</strong>."
-
+intro.innerHTML = "This is <strong>bold</strong>.";
 
 // TODO 3: Read the link's current href using getAttribute("href"), log it, then
 // change it to "https://developer.mozilla.org" using setAttribute("href", ...).
+console.log(link.getAttribute("href")); // "#"
+link.setAttribute("href", "https://developer.mozilla.org");
 
 
 // TODO 4: Use classList.add() to add the "highlight" class to `firstCard`.
 // Then use classList.toggle() to add/remove it again — run this twice and watch
 // the card's background color change each time you refresh vs re-run.
-
+firstCard.classList.add("highlight");
+firstCard.classList.toggle("highlight");
 
 // TODO 5: Use classList.contains() to check whether firstCard currently has the
 // "highlight" class, and log the boolean result.
 
-
+console.log(firstCard.classList.contains("highlight"));
 // TODO 6: Use the `.style` property to directly set the intro paragraph's color
 // to "blue" and fontWeight to "bold" (camelCase for multi-word CSS properties!).
+intro.style.color = "blue";
+intro.style.fontWeight = "bold";
